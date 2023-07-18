@@ -1,0 +1,36 @@
+\documentclass[12pt]{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[OT6,T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{relsize}
+
+\newcommand{\armenian}{\fontencoding{OT6}\fontfamily{cmr}\selectfont}
+\DeclareTextFontCommand{\textarmenian}{\armenian}
+\newcommand{\english}{\fontencoding{T1}\fontfamily{cmr}\selectfont}
+\DeclareTextFontCommand{\textenglish}{\english}
+\newenvironment{myfont}{\fontencoding{OT6}\fontfamily{cmr}\selectfont}{\par}
+
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+}
+
+\begin{document}
+\centering
+
+\begin{frame}
+    \begin{align*}
+        \vec{\textbf{u}} = a \vec{\textbf{v}} + b \vec{\textbf{w}}
+    \end{align*}
+\end{frame}
+\end{document}
